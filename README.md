@@ -35,25 +35,25 @@ Add the following shortcode to any page or post:
 ## Screenshots
 
 **Contact Form (all fields enabled):**  
-![Contact Form](wp-secure-contact-form/screenshots/contact-form-all-fields.png)
+![Contact Form](screenshots/contact-form-all-fields.png)
 
 **Settings Page:**  
-![Settings Page](wp-secure-contact-form/screenshots/settings-page.png)
+![Settings Page](screenshots/settings-page.png)
 
 **Success Message:**  
-![Success Message](wp-secure-contact-form/screenshots/contact-form-success.png)
+![Success Message](screenshots/contact-form-success.png)
 
 **Error Message – Invalid Email Format:**  
-![Email Format Error](wp-secure-contact-form/screenshots/contact-form-email-error.png)
+![Email Format Error](screenshots/contact-form-email-error.png)
 
 **Error Message – Message Field Required:**  
-![Message Field Error](wp-secure-contact-form/screenshots/contact-form-message-error.png)
+![Message Field Error](screenshots/contact-form-message-error.png)
 
 **Mailtrap Email Example:**  
-![Mailtrap Email](wp-secure-contact-form/screenshots/mailtrap-email.png)
+![Mailtrap Email](screenshots/mailtrap-email.png)
 
 **Header and Footer Gradient:**  
-![Header and Footer](wp-secure-contact-form/screenshots/header-footer-gradient.png)
+![Header and Footer](screenshots/header-footer-gradient.png)
 
 ## Customization
 
