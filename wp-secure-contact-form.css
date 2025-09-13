@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Inter', 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+    font-size: 1em;
+    background: #f7fbfd;
+    color: #222;
+}
+
+/* Header Bar Layout */
+.header-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #155a8a 0%, #90c2e7 100%);
+    color: #fff;
+    padding: 28px 24px;
+}
+
+/* Left: Logo + Title */
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.wp-block-site-logo {
+    width: 48px !important;
+    height: 48px !important;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wp-block-site-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.wp-block-site-title {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    font-size: 1.3em;
+    color: #fff;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.wp-block-site-title a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: color 0.2s;
+}
+
+.wp-block-site-title a:hover {
+    color: #90c2e7;
+}
+
+/* Right: Navigation */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.header-right a {
+    color: #fff !important;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.header-right a:hover {
+    color: #90c2e7 !important;
+}
+
+/* Center the Secure Contact Form heading and limit its width */
+.wp-block-post-title {
+    text-align: center;
+    margin: 24px auto;
+    font-size: 2.0em;
+    color: #000 !important;
+    font-weight: bold;
+    max-width: 420px;
+}
+.wp-block-post-title a {
+    color: #000 !important;         /* Black */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+.wp-block-post-title a:hover {
+    color: #155a8a !important;      /* Blue on hover */
+}
+
+/* Center the form and limit its width */
+.wscf-form {
+    max-width: 420px;
+    width: 100%;
+    margin: 0 auto 40px auto;
+    padding: 32px 28px 24px 28px;
+    border: none;
+    border-radius: 14px;
+    background: #155a8a;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.09);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* Form heading */
+.wscf-form-heading {
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0;
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.wscf-form label {
+    font-weight: 600;
+    margin-bottom: 2px;
+    color: #fff;
+    font-size: 1em;
+}
+
+.wscf-form input[type="text"],
+.wscf-form input[type="email"],
+.wscf-form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 0;
+    border: 1.5px solid #155a8a;
+    border-radius: 6px;
+    font-size: 1em;
+    background: #f7fbfd;
+    transition: border 0.2s, box-shadow 0.2s;
+    box-sizing: border-box;
+}
+
+.wscf-form input[type="text"]:focus,
+.wscf-form input[type="email"]:focus,
+.wscf-form textarea:focus {
+    border: 1.5px solid #90c2e7;
+    outline: none;
+    box-shadow: 0 0 0 2px #e3f0fb;
+    background: #fff;
+}
+
+.wscf-form textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+.wscf-form .wscf-submit-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+    width: 100%;
+    border: none;
+}
+
+.wscf-form input[type="submit"] {
+    width: 100%;
+    background: linear-gradient(90deg, #155a8a 0%, #90c2e7 100%);
+    color: #fff;
+    border: 1px solid #155a8a;
+    padding: 12px 0;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 8px rgba(21,90,138,0.07);
+    transition: background 0.2s, transform 0.1s;
+    display: block;
+}
+
+.wscf-form input[type="submit"]:hover {
+    background: linear-gradient(90deg, #0d3c5e 0%, #155a8a 100%);
+    transform: translateY(-2px) scale(1.03);
+}
+
+.wscf-form p {
+    margin-bottom: 6px;
+}
+
+.wscf-form p:last-child {
+    margin-bottom: 0;
+}
+
+/* Toast notification styles */
+.wscf-toast {
+    position: static;
+    margin-bottom: 18px;
+    width: 100%;
+    max-width: 100%;
+    background: #fff;
+    color: #155a8a;
+    border: 1.5px solid #90c2e7;
+    padding: 32px 28px 24px 28px;
+    border-radius: 14px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.09);
+    text-align: center;
+    font-weight: bold;
+    opacity: 1;
+    transition: opacity 1s;
+    z-index: 1;
+}
+
+.wscf-toast-success {
+    background: #fff;
+    color: #155a8a;
+    border: 1.5px solid #90c2e7;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.09);
+}
+
+.wscf-toast-error {
+    background: #fff;
+    color: #d32f2f;
+    border: 1.5px solid #f5c6cb;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.09);
+}
+
+/* Hide post meta (author and date) */
+.entry-meta,
+.wp-block-post-author,
+.wp-block-post-date {
+    display: none !important;
+}
+
+.wp-block-group {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
+/* Footer styles */
+.site-info,
+.wp-block-site-info,
+footer,
+#colophon {
+    background: linear-gradient(90deg, #155a8a 0%, #90c2e7 100%);
+    color: #fff;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    border-top: 3px solid #90c2e7;
+}
+
+.site-info a,
+.wp-block-site-info a,
+footer a,
+#colophon a {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.site-info a:hover,
+.wp-block-site-info a:hover,
+footer a:hover,
+#colophon a:hover {
+    color: #90c2e7;
+}
+
+/* Responsive for mobile */
+@media (max-width: 480px) {
+    .wscf-toast {
+        width: 95vw;
+        min-width: unset;
+        max-width: 98vw;
+        left: 2.5vw;
+        right: unset;
+        padding: 20px 8px 16px 8px;
+    }
+}
+
+/* Spacer fix */
+.wp-block-spacer {
+    height: 10px !important;
+    min-height: 0 !important;
+    max-height: 20px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
